@@ -1,8 +1,8 @@
 .icon {
   cursor: pointer;
   &:before {
-    content: '';
-    background: url('../../assets/icons/info.svg') no-repeat;
+    content: "";
+    background: url("../../assets/icons/info.svg") no-repeat;
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -10,17 +10,17 @@
   }
   &_clicked {
     &:before {
-      background: url('../../assets/icons/x-circle.svg') no-repeat;
+      background: url("../../assets/icons/x-circle.svg") no-repeat;
     }
   }
 }
-.bs-popover-bottom  {
+.bs-popover-bottom {
   margin-left: 5px;
-  &> .popover-arrow::after {
+  & > .popover-arrow::after {
     border-bottom-color: rgb(121, 85, 237) !important;
     border-left: 0 !important;
   }
-  &> .popover-arrow::before {
+  & > .popover-arrow::before {
     border-left: 0 !important;
   }
   .popover-body {

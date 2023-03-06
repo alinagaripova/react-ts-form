@@ -1,14 +1,14 @@
-form{
+form {
   padding: 50px 10px;
   .form {
-    &-radio{
-      &>label {
+    &-radio {
+      & > label {
         color: gray;
         font-size: 14px;
       }
       &__radio {
         font-weight: bold;
-        &>label {
+        & > label {
           font-size: 14px;
         }
       }
@@ -18,7 +18,7 @@ form{
           background-color: #000;
           border-color: #000;
         }
-  
+
         &:focus {
           box-shadow: none;
         }
@@ -31,7 +31,7 @@ form{
       }
       .form-switch {
         padding-left: 44px;
-        .form-check-input  {
+        .form-check-input {
           cursor: pointer;
           height: 20px;
           margin-top: 0;
@@ -47,13 +47,13 @@ form{
         }
       }
       .text {
-        &_checked{
+        &_checked {
           font-weight: bold;
           color: #000;
         }
       }
     }
-    &-input{
+    &-input {
       .form-control:focus {
         border-color: rgba(253, 133, 13, 0.25);
         box-shadow: 0 0 0 0.25rem rgba(253, 133, 13, 0.25);
@@ -71,5 +71,4 @@ form{
       }
     }
   }
-  
 }
