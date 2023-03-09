@@ -11,7 +11,7 @@ interface SwitchProps {
 const Switch = React.memo(({ handleToogle, isToogled }: SwitchProps) => {
   return (
     <Form.Group className="mb-3 form-switcher" controlId="formBasicSwitch">
-      <Stack direction="horizontal" gap={3}>
+      <Stack direction="horizontal" gap={2}>
         <Form.Text
           className={cx("mt-0 text", {
             text_checked: !isToogled,

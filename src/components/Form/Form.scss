@@ -1,10 +1,11 @@
 form {
-  padding: 50px 10px;
+  padding: 40px 0;
   .form {
     &-radio {
-      & > label {
-        color: gray;
-        font-size: 14px;
+      .form-text {
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(163, 163, 163);
       }
       &__radio {
         font-weight: bold;
@@ -15,8 +16,9 @@ form {
       .form-check-input {
         cursor: pointer;
         &:checked {
-          background-color: #000;
-          border-color: #000;
+          background-color: #fff;
+          border-color: rgb(163, 163, 163);
+          background-image: url("data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%27-4 -4 8 8%27><circle r=%272.5%27 fill=%27%23black%27/></svg>");
         }
 
         &:focus {
@@ -27,7 +29,9 @@ form {
     &-switcher {
       padding-left: 0;
       .form-text {
-        font-size: 14px;
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(163, 163, 163);
       }
       .form-switch {
         padding-left: 44px;
@@ -62,7 +66,12 @@ form {
         width: 200px;
         height: 32px;
         border-radius: 20px;
+        font-weight: bold;
         outline: none;
+
+        &::placeholder {
+          font-weight: normal;
+        }
       }
       .form-text {
         font-weight: bold;

@@ -4,6 +4,8 @@ export const elements: IFormCheckElement[] = [
   {
     id: 1,
     label: "Оклад за месяц",
+    sumDescription: "",
+    currencyID: 1,
     salaryCalculation: {
       percent: 13,
     },
@@ -12,6 +14,8 @@ export const elements: IFormCheckElement[] = [
   {
     id: 2,
     label: "МРОТ",
+    sumDescription: "",
+    currencyID: 1,
     help: {
       isHelp: true,
       description:
@@ -21,12 +25,16 @@ export const elements: IFormCheckElement[] = [
   },
   {
     id: 3,
-    label: "Оклад за день",
+    label: "Оплата за день",
+    sumDescription: "в день",
+    currencyID: 1,
     showCalculate: true,
   },
   {
     id: 4,
-    label: "Оклад за час",
+    label: "Оплата за час",
+    sumDescription: "в час",
+    currencyID: 1,
     showCalculate: true,
   },
 ];
