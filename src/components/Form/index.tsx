@@ -34,11 +34,12 @@ function FormComponent() {
           return (
             <div
               key={label}
-              className="form-radio__radio mx-3 d-flex justify-content-start align-items-center"
+              className="form-radio__radio mx-5 d-flex justify-content-start align-items-center"
             >
               <Form.Check
                 type="radio"
                 name="group1"
+                className="px-0"
                 label={label}
                 onClick={() => handleChooseEl(element)}
                 checked={id === checkedEl.id}
